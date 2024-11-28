@@ -1,0 +1,48 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.white-section,
+.black-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1s ease;
+}
+
+.white-section {
+  background-color: white;
+  color: black;
+}
+
+.black-section {
+  background-color: black;
+  color: white;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: black;
+  }
+}
